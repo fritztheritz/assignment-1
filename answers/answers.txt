@@ -1,0 +1,36 @@
+Question #1: mkdir answers
+Question #2: cd answers; touch answers.txt
+Question #4: this is my absolute path: /Users/fritzduverglas/Desktop/Coding Folders/envs110a/assignment-1/answers
+Question #5: ls -a
+Question #6: You can use ls -RF to list the other folders that are within that current directory
+Question #7: rm is dangerous because once it is used, you cannot get the files/folders back. There's no recycling bin to recover these files.
+For example, if you deleted a folder using rm -r, there's no way to get that back.
+Question #8: mkdir results
+Question #9: touch my_script.sh
+Question #10: chmod a+x my_script.sh
+Question #11: cd ../../data
+Question #12: wc -w *.csv | sort -nr | head -n 3 | tail -n 1
+Question #13: While being in the results directory
+for file in ../../data/*.csv
+do
+	./my_script.sh $file
+done
+Question #14: Starting in the main assignment-1 directory
+mkdir unzipped-files
+cd data
+for zipfile in *.zip
+do
+	unzip $zipfile
+done
+for newfile in annual_aqi_by_county_*.csv
+do
+	mv $newfile ../unzipped-files
+done
+Question #15: Starting in the data directory
+rm -i *.zip
+Question #16: Starting in the unzipped-files directory
+for file in annual_aqi_by_county_2*.csv
+do
+	mv $file ../answers/results
+done
+
