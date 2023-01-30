@@ -31,6 +31,6 @@ rm -i *.zip
 Question #16: Starting in the unzipped-files directory
 for file in annual_aqi_by_county_2*.csv
 do
-	mv $file ../answers/results
+	cp $file ../answers/results
 done
 
