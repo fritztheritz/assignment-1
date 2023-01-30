@@ -1,5 +1,6 @@
 Question #1: mkdir answers
 Question #2: cd answers; touch answers.txt
+Question #3: nano answers.txt
 Question #4: this is my absolute path: /Users/fritzduverglas/Desktop/Coding Folders/envs110a/assignment-1/answers
 Question #5: ls -a
 Question #6: You can use ls -RF to list the other folders that are within that current directory
